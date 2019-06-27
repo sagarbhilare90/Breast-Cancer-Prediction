@@ -87,3 +87,7 @@ plt.xlabel('Component1')
 plt.ylabel('Component2')
 plt.legend()
 plt.show()
+
+#Visualisation Correlation matrix
+df= pd.read_csv("brcancer.csv")
+matrix=df.corr(method ='kendall') 
